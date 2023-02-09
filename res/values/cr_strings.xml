@@ -25,6 +25,10 @@
     <!-- General -->
     <string name="settings_title">Home settings</string>
 
+    <!-- Toast for Clear All, App Locked n Unlocked -->
+    <string name="action_toast_enabled_title">Action Toasts</string>
+    <string name="action_toast_enabled_summary">Enable-disable Toast clear all</string>
+
     <!-- Categories -->
     <string name="home_category_title">Home screen</string>
     <string name="home_category_summary">Set Google now panel and more</string>
