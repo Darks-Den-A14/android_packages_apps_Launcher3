@@ -17,7 +17,7 @@
 <resources>
 
      <!-- Meminfo in overview -->
-    <dimen name="meminfo_bottom_margin_gesture">0dp</dimen>
+    <dimen name="meminfo_bottom_margin_gesture">10dp</dimen>
     <dimen name="meminfo_bottom_margin_transient_taskbar">96dp</dimen>
     <dimen name="meminfo_bottom_margin_three_button">15dp</dimen>
     <dimen name="meminfo_top_margin">12dp</dimen>
@@ -33,5 +33,5 @@
     <dimen name="top_level_preference_summary_max_width">200dp</dimen>    
 
     <!-- Overview scrolling scale animation -->
-    <dimen name="overview_scroll_scale">0.9</dimen>
+    <dimen name="overview_scroll_scale">0.8</dimen>
 </resources>
