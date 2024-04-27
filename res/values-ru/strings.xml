@@ -179,4 +179,7 @@
     <string name="ps_container_lock_unlock_button" msgid="7605602332253423755">"Блокировка и разблокировка личного пространства"</string>
     <string name="ps_container_transition" msgid="8667331812048014412">"Переход к личному пространству"</string>
     <string name="bubble_bar_overflow_description" msgid="7410995531938041192">"Дополнительное меню"</string>
+    <string name="recents_all_apps_cleared">Очищено</string>
+    <string name="recents_app_unlocked">Приложение разблокировано</string>
+    <string name="recents_app_locked">Приложение заблокировано</string>
 </resources>
