@@ -377,7 +377,7 @@ public class InvariantDeviceProfile implements OnSharedPreferenceChangeListener 
                 onConfigChanged(mContext);
                 break;
             case IconDatabase.KEY_THEMED_ICON_PACK:
-            case Utilities.KEY_FORCE_MONOCHROME_ICONS:
+            case Utilities.KEY_FORCE_MONOCHROME_ICON:
                 LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                 break;
         }
