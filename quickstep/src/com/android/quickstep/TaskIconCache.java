@@ -79,7 +79,7 @@ public class TaskIconCache implements DisplayInfoChangeListener {
 
     private MonochromeIconFactory mMonochromeIconFactory;
     private boolean mThemedIconsEnabled;
-    private boolean mIsMonochromeIconsEnabled;
+    private boolean mForceMonoIconEnabled;
 
     @Nullable
     public TaskVisualsChangeListener mTaskVisualsChangeListener = null;
@@ -96,7 +96,7 @@ public class TaskIconCache implements DisplayInfoChangeListener {
 
         DisplayController.INSTANCE.get(mContext).addChangeListener(this);
         mThemedIconsEnabled = Themes.isThemedIconEnabled(mContext);
-        mIsMonochromeIconsEnabled = Utilities.enableMonoChromeThemedIcons(context);
+        mForceMonoIconEnabled = Utilities.enableMonoChromeThemedIcons(context);
     }
 
     @Override
@@ -282,7 +282,7 @@ public class TaskIconCache implements DisplayInfoChangeListener {
                 @Override
                 protected Drawable getMonochromeDrawable(Drawable base) {
                     Drawable mono = super.getMonochromeDrawable(base);
-                    if (mono != null || !mIsMonochromeIconsEnabled) {
+                    if (mono != null || !mForceMonoIconEnabled) {
                         return mono;
                     }
                     if (mMonochromeIconFactory == null) {
